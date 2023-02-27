@@ -1,4 +1,4 @@
-#Página Retro
+# Página Retro
 
 Este es un proyecto de una página web que muestra a algunos de los artistas más destacados de la música en español, con sus respectivas imágenes y canciones populares. La página tiene un diseño de estilo retro.
 
