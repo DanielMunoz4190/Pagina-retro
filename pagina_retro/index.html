@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title > Pagina retro</title>
+        <link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="main.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        
+    </head>
+    <body>
+        <p class="rainbow-text col-3">GREATESTS ARTISTS</p>
+		<div class="container">
+			<div class="row">
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F21%2F2010%2F04%2Fluis-miguel-40anos-12.jpg&w=400&h=532&c=sc&poi=face&q=60" alt="Luis Miguel">
+					<div class = "rainbow-text1">Luis Miguel</div>
+					<audio id="miAudio1" controls>
+						<source src="sonido/Luis Miguel - La Incondicional (Video Oficial)-[onlinevideoconverter.com].mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control1" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio1()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio1()">Pausar</button>
+					<script>
+						var audio1 = document.getElementById("miAudio1");
+						var volumeControl1 = document.getElementById("volume-control1");
+						
+						volumeControl1.addEventListener("input", function() {
+							audio1.volume = volumeControl1.value;
+						});
+						
+						function playAudio1() {
+							audio1.play();
+						}
+						
+						function pauseAudio1() {
+							audio1.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://www.elsoldehermosillo.com.mx/gossip/qktgsn-valentin-murio-en-el-2006-a-causa-de-un-ataque-armado/ALTERNATES/LANDSCAPE_768/Valentin%20murió%20en%20el%202006%20a%20causa%20de%20un%20ataque%20armado" alt="Valentin">
+					<div class = "rainbow-text1">Valentin Elizalde</div>
+					<audio id="miAudio2" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control2" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio2()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio2()">Pausar</button>
+					<script>
+						var audio2 = document.getElementById("miAudio2");
+						var volumeControl2 = document.getElementById("volume-control2");
+						
+						volumeControl2.addEventListener("input", function() {
+							audio2.volume = volumeControl2.value;
+						});
+						
+						function playAudio2() {
+							audio2.play();
+						}
+						
+						function pauseAudio2() {
+							audio2.pause();
+						}
+					</script>
+					
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://tecolotito.elsiglodetorreon.com.mx/i/2018/11/1118268.jpeg" alt="Queen">
+					<div class = "rainbow-text1">Juan Gabriel</div>
+					<audio id="miAudio3" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control3" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio3()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio3()">Pausar</button>
+					<script>
+						var audio3 = document.getElementById("miAudio3");
+						var volumeControl3 = document.getElementById("volume-control3");
+						
+						volumeControl3.addEventListener("input", function() {
+							audio3.volume = volumeControl3.value;
+						});
+						
+						function playAudio3() {
+							audio3.play();
+						}
+						
+						function pauseAudio3() {
+							audio3.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="imagenes/5acf44b6b52e40d5a345f5f39c4cb715-1024x1024.jpg" alt="Queen">
+					<div class = "rainbow-text1">Queen</div>
+					<audio id="miAudio4" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control4" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio4()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio4()">Pausar</button>
+					<script>
+						var audio4 = document.getElementById("miAudio4");
+						var volumeControl4 = document.getElementById("volume-control4");
+						
+						volumeControl4.addEventListener("input", function() {
+							audio4.volume = volumeControl4.value;
+						});
+						
+						function playAudio4() {
+							audio4.play();
+						}
+						
+						function pauseAudio4() {
+							audio4.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg/1200px-Michael_Jackson_Dangerous_World_Tour_1993.jpg" alt="Michael">
+					<div class = "rainbow-text1">Michael Jackson</div>
+					<audio id="miAudio5" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control5" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio5()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio5()">Pausar</button>
+					<script>
+						var audio5 = document.getElementById("miAudio5");
+						var volumeControl5 = document.getElementById("volume-control5");
+						
+						volumeControl5.addEventListener("input", function() {
+							audio5.volume = volumeControl5.value;
+						});
+						
+						function playAudio5() {
+							audio5.play();
+						}
+						
+						function pauseAudio5() {
+							audio5.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://imagenes.elpais.com/resizer/XNEAInQNLwuFyWJ7VmFbE9kdI-c=/1960x1103/ep01.epimg.net/cultura/imagenes/2016/01/05/actualidad/1451996412_919425_1452000859_noticia_fotograma.jpg" alt="Guns">
+					<div class = "rainbow-text1">Guns n'roses</div>
+					<audio id="miAudio6" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control6" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio6()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio6()">Pausar</button>
+					<script>
+						var audio6 = document.getElementById("miAudio6");
+						var volumeControl6 = document.getElementById("volume-control6");
+						
+						volumeControl6.addEventListener("input", function() {
+							audio6.volume = volumeControl6.value;
+						});
+						
+						function playAudio6() {
+							audio6.play();
+						}
+						
+						function pauseAudio6() {
+							audio6.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://muzikalia.com/wp-content/uploads/2018/11/billyjoel.jpg" alt="Billy Joel">
+					<div class = "rainbow-text1">Billy Joel</div>
+					<audio id="miAudio7" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control7" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio7()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio7()">Pausar</button>
+					<script>
+						var audio7 = document.getElementById("miAudio7");
+						var volumeControl7 = document.getElementById("volume-control7");
+						
+						volumeControl7.addEventListener("input", function() {
+							audio7.volume = volumeControl7.value;
+						});
+						
+						function playAudio7() {
+							audio7.play();
+						}
+						
+						function pauseAudio7() {
+							audio7.pause();
+						}
+					</script>
+				</div>
+				<div class="box col--lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://cadenaser.com/resizer/DsoE8dNqCCHDViiiRIL6v8U17bc=/736x414/filters:format(jpg):quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/prisaradio/4XVT2NBFP5M4LMYMFOPLGLXYDA.jpg" alt="Tupac">
+					<div class = "rainbow-text1">Tupac Shakur</div>
+					<audio id="miAudio8" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control8" type="range" min="0" max="1" step="0.01" value="1">
+					</div>	
+					<button class = "boton_play" onclick="playAudio8()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio8()">Pausar</button>
+					<script>
+						var audio8 = document.getElementById("miAudio8");
+						var volumeControl8 = document.getElementById("volume-control8");
+						
+						volumeControl8.addEventListener("input", function() {
+							audio8.volume = volumeControl8.value;
+						});
+						
+						function playAudio8() {
+							audio8.play();
+						}
+						
+						function pauseAudio8() {
+							audio8.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3	col-sm-5 col-xs-6">
+					<img class = "image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSftT0hArXz7QwGZdTu13A2y-NwWXhRK4uWwQ&usqp=CAU" alt="Whitney">
+					<div class = "rainbow-text1">Whitney Houston</div>
+					<audio id="miAudio9" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control9" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio9()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio9()">Pausar</button>
+					<script>
+						var audio9 = document.getElementById("miAudio9");
+						var volumeControl9 = document.getElementById("volume-control9");
+						
+						volumeControl9.addEventListener("input", function() {
+							audio9.volume = volumeControl9.value;
+						});
+						
+						function playAudio9() {
+							audio9.play();
+						}
+						
+						function pauseAudio9() {
+							audio9.pause();
+						}
+					</script>
+				</div>
+				<div class="box col-lg-3 col-md-3 col-sm-5 col-xs-6">
+					<img class = "image" src="https://media.vogue.mx/photos/6306ba30b2f50e7df3859fd2/2:3/w_2560%2Cc_limit/vicente-fernandez-serie-netflix.jpg" alt="Vicente">
+					<div class = "rainbow-text1">Vicente Fernandez</div>
+					<audio id="miAudio10" controls>
+						<source src="tu-cancion.mp3" type="audio/mpeg">
+						Tu navegador no soporta la etiqueta de audio.
+					</audio>
+					<div class="volume-control">
+						<input id="volume-control10" type="range" min="0" max="1" step="0.01" value="1">
+					</div>
+					<button class = "boton_play" onclick="playAudio10()">Reproducir</button>
+					<button class = "boton_pause" onclick="pauseAudio10()">Pausar</button>
+					<script>
+						var audio10 = document.getElementById("miAudio10");
+						var volumeControl10 = document.getElementById("volume-control10");
+						
+						volumeControl10.addEventListener("input", function() {
+							audio10.volume = volumeControl10.value;
+						});
+						
+						function playAudio10() {
+							audio10.play();
+						}
+						
+						function pauseAudio10() {
+							audio10.pause();
+						}
+					</script>
+				
+				</div>
+			</div>
+		</div>
+		<form id="form-comentarios">
+			<label for="nombre" style = "color: white";>Nombre:</label>
+			<input type="text" id="nombre" name="nombre">
+			<br>
+			<label for="comentario" style = "color: white";>Comentario:</label>
+			<textarea id="comentario" name="comentario"></textarea>
+			<br>
+			<button type="submit">Enviar comentario</button>
+		</form>
+		<div id="comentarios" style = "width: 100%; font-size: 20px; color: white";></div>
+		<script>
+			$(document).ready(function() {
+			// Seleccionar el formulario de comentarios
+			var formComentarios = $('#form-comentarios');
+		
+			// Agregar evento submit al formulario
+			formComentarios.submit(function(event) {
+			// Prevenir el comportamiento predeterminado del formulario
+			event.preventDefault();
+		
+			// Obtener los valores del formulario
+			var nombre = $('#nombre').val();
+			var comentario = $('#comentario').val();
+		
+			// Agregar el comentario al elemento div
+			$('#comentarios').append('<p><strong>' + nombre + ':</strong> ' + comentario + '</p>');
+		
+			// Limpiar el formulario
+			formComentarios[0].reset();
+			});
+		});
+  
+		</script>
+
+		  
+
+	
+
+
+    </body>
+</html>

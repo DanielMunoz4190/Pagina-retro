@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Gameplay";
+    src: url("/Users/danielmunoz/Downloads/Gameplay.ttf");
+}
+body{
+    background-image: url("imagenes/fondo.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.rainbow-text {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-animation 10s ease infinite;
+    font-size: 30px;
+    background-color: #000000;
+    font-family: "Gameplay"; 
+    border : 10px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 40%;
+  }
+  .rainbow-text1 {
+    background: linear-gradient(90deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-animation 10s ease infinite;
+    font-size: 20px;
+    background-color: #000000;
+    font-family: "Gameplay";  
+    text-align: center;
+  }
+@keyframes rainbow-text-animation {
+    0% {background-position: 0% 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0% 50%}
+}  
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: #000000;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.text{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Gameplay";
+
+}
+.image{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    display: block;
+
+}
+.boton_play{
+    background-color: #00ff00;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.boton_pause{
+    background-color: #ff0000;
+    color: white;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.volume-control{
+    width: 100%;
+    height: 10px;
+    position: relative;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.volume-control .volume-bar-fill {
+width: 50%;
+height: 100%;
+background-color: #ff6600;
+border-radius: 5px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.comentario{
+    font-size: 20px;
+    color: #fff;
+    font-family: "Gameplay";
+    text-align: center;
+}
