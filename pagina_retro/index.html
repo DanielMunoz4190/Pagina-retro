@@ -48,7 +48,7 @@
 					<img class = "image" src="https://www.elsoldehermosillo.com.mx/gossip/qktgsn-valentin-murio-en-el-2006-a-causa-de-un-ataque-armado/ALTERNATES/LANDSCAPE_768/Valentin%20murió%20en%20el%202006%20a%20causa%20de%20un%20ataque%20armado" alt="Valentin">
 					<div class = "rainbow-text1">Valentin Elizalde</div>
 					<audio id="miAudio2" controls>
-						<source src="tu-cancion.mp3" type="audio/mpeg">
+						<source src="sonido/Valentin.mp3" type="audio/mpeg">
 						Tu navegador no soporta la etiqueta de audio.
 					</audio>
 					<div class="volume-control">
@@ -78,7 +78,7 @@
 					<img class = "image" src="https://tecolotito.elsiglodetorreon.com.mx/i/2018/11/1118268.jpeg" alt="Queen">
 					<div class = "rainbow-text1">Juan Gabriel</div>
 					<audio id="miAudio3" controls>
-						<source src="tu-cancion.mp3" type="audio/mpeg">
+						<source src="sonido/Juan Gabriel.mp3" type="audio/mpeg">
 						Tu navegador no soporta la etiqueta de audio.
 					</audio>
 					<div class="volume-control">
@@ -107,7 +107,7 @@
 					<img class = "image" src="imagenes/5acf44b6b52e40d5a345f5f39c4cb715-1024x1024.jpg" alt="Queen">
 					<div class = "rainbow-text1">Queen</div>
 					<audio id="miAudio4" controls>
-						<source src="tu-cancion.mp3" type="audio/mpeg">
+						<source src="sonido/Queen.mp3" type="audio/mpeg">
 						Tu navegador no soporta la etiqueta de audio.
 					</audio>
 					<div class="volume-control">
@@ -136,7 +136,7 @@
 					<img class = "image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Michael_Jackson_Dangerous_World_Tour_1993.jpg/1200px-Michael_Jackson_Dangerous_World_Tour_1993.jpg" alt="Michael">
 					<div class = "rainbow-text1">Michael Jackson</div>
 					<audio id="miAudio5" controls>
-						<source src="tu-cancion.mp3" type="audio/mpeg">
+						<source src="sonido/Michael.mp3" type="audio/mpeg">
 						Tu navegador no soporta la etiqueta de audio.
 					</audio>
 					<div class="volume-control">
@@ -310,16 +310,28 @@
 			</div>
 		</div>
 		<!-- Botón de "Me gusta" -->
-		<button type="button" class="btn btn-success" onclick="loadPNG1()">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="text-center">
+						<button type="button" class="btn btn-success" onclick="loadPNG1()">
+							<i class="fas fa-thumbs-up" ></i> Me gusta
+							<div id="demo1"></div>
+						</button>
+						
+						<!-- Botón de "No me gusta" -->
+						<button type="button" class="btn btn-danger" onclick="loadPNG2()">
+							<i class="fas fa-thumbs-down"></i> No me gusta
+							<div id="demo2"></div>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
 			<i class="fas fa-thumbs-up" ></i> Me gusta
 			<div id="demo1"></div>
-		</button>
-		
-		<!-- Botón de "No me gusta" -->
-		<button type="button" class="btn btn-danger" onclick="loadPNG2()">
-			<i class="fas fa-thumbs-down"></i> No me gusta
-			<div id="demo2"></div>
-		</button>
+
   
 		<script>
 
@@ -351,7 +363,7 @@
 		};
 
 		</script>
-		<form id="form-comentarios">
+		<form id="form-comentarios" >
 			<label for="nombre" style = "color: white";>Nombre:</label>
 			<input type="text" id="nombre" name="nombre">
 			<br>
@@ -359,8 +371,9 @@
 			<textarea id="comentario" name="comentario"></textarea>
 			<br>
 			<button type="submit">Enviar comentario</button>
+			<div id="comentarios" style = "width: 100%; font-size: 20px; color: white";></div>
 		</form>
-		<div id="comentarios" style = "width: 100%; font-size: 20px; color: white";></div>
+		
 		<script>
 			$(document).ready(function() {
 			// Seleccionar el formulario de comentarios
