@@ -309,6 +309,48 @@
 				</div>
 			</div>
 		</div>
+		<!-- Botón de "Me gusta" -->
+		<button type="button" class="btn btn-success" onclick="loadPNG1()">
+			<i class="fas fa-thumbs-up" ></i> Me gusta
+			<div id="demo1"></div>
+		</button>
+		
+		<!-- Botón de "No me gusta" -->
+		<button type="button" class="btn btn-danger" onclick="loadPNG2()">
+			<i class="fas fa-thumbs-down"></i> No me gusta
+			<div id="demo2"></div>
+		</button>
+  
+		<script>
+
+		function loadPNG1() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					const img = document.createElement('img');
+					img.src = this.responseURL;
+					document.getElementById("demo1").appendChild(img);
+					console.log(xhttp.response);
+				}
+			} 
+			xhttp.open("GET", "imagenes/me-gusta.png", true);
+			xhttp.send();
+		};
+		function loadPNG2() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					const img = document.createElement('img');
+					img.src = this.responseURL;
+					document.getElementById("demo2").appendChild(img);
+					console.log(xhttp.response);
+				}
+			} 
+			xhttp.open("GET", "imagenes/no-me-gusta.jpg", true);
+			xhttp.send();
+		};
+
+		</script>
 		<form id="form-comentarios">
 			<label for="nombre" style = "color: white";>Nombre:</label>
 			<input type="text" id="nombre" name="nombre">
@@ -340,8 +382,10 @@
 			formComentarios[0].reset();
 			});
 		});
-  
 		</script>
+  
+		
+
 
 		  
 
